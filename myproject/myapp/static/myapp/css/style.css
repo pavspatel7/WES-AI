@@ -1,0 +1,204 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/favicon.jpeg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: repeat; /* Do not repeat the background image */
+    background-position: center center; /* Center the background image */
+    height: 100vh; /* Set body height to fill the viewport */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.title {
+    background-image: url('../img/Logo-Rutgers-University.png');
+    background-repeat: no-repeat;
+    background-size: 200px; /* Adjust the size of the image */
+    background-position: left center; /* Position the image to the left */
+    padding-left: 90px; /* Add padding to the left to create space for the image */
+}
+
+
+.menu a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fbff00;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add a smooth transition effect for color changes */
+}
+
+.menu a:hover {
+    color: #ffffff; /* Change text color on hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add a text shadow on hover */
+}
+
+
+/* Apply animation and transition to the chat container */
+.chat-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #ede9e9e2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+    animation: fadeIn 1s ease forwards; /* Fade-in animation */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect to the chat container */
+.chat-container:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Apply animation to chat box */
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    animation: slideIn 1s ease forwards; /* Slide-in animation */
+}
+
+/* Apply animation to chat messages */
+.chat {
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards; /* Fade-in animation for each chat message */
+}
+
+/* Define keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Style for user chat */
+.user-chat {
+    position: relative; /* Ensure positioning context for pseudo-elements */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack chat bubbles vertically */
+    align-items: flex-end; /* Align chat bubbles to the start (left) */
+    max-width: 100%; /* Limit the width of the chat bubble */
+    background-color: #cf3e3ee8; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding for content */
+    margin-bottom: 10px; /* Add space between chat bubbles */
+    border-radius: 20px; /* Rounded corners */
+    margin-left: 325px;
+
+}
+
+/* Style for bot chat */
+.bot-chat {
+    position: relative; /* Ensure positioning context for pseudo-elements */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack chat bubbles vertically */
+    align-items: flex-start; /* Align chat bubbles to the end (right) */
+    max-width: 100%; /* Limit the width of the chat bubble */
+    background-color: #6a66666d; /* Background color */
+    color: #000000; /* Text color */
+    padding: 10px; /* Padding for content */
+    margin-bottom: 10px; /* Add space between chat bubbles */
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 325px;
+}
+
+
+.chat-input {
+    padding: 20px;
+    border-top: 1px solid #c6939300;
+    display: flex;
+    align-items: center;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ae1e1e;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+.chat-input input[type="text"]:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+.chat-input button:hover {
+    background-color: #0056b3; /* Change background color of the button on hover */
+    color: #fff; /* Change text color of the button on hover */
+}
+
+.chat-input button:hover::before {
+    content: "\f1d8"; /* Unicode for arrow right icon */
+    font-family: "Font Awesome 5 Free"; /* Assuming you're using Font Awesome for icons */
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Navigation bar styles */
+.header {
+    background-color: #000000; /* White background */
+    padding: 17.5px; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+.header .title {
+    color: #e41937; /* Title color */
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 220px;
+}
+
+.header .menu {
+    display: flex;
+}
+
+.header .menu a {
+    margin-left: 50px; /* Adjust spacing between menu items */
+    text-decoration: none;
+    color: #fbff00;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add smooth transition effect */
+}
+
+.header .menu a:hover {
+    color: #ffffff; /* Change text color on hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add text shadow on hover */
+}
