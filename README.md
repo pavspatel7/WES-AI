@@ -1,13 +1,67 @@
-# Activate venv
-conda create -n "myenv" python=3.3.0
+# Project Setup Instructions
 
-# Install Import:
--pip3 install flask
--pip3 install Django
--pip3 install sentence_transformers
--pip3 install django-cors-headers
+This guide will walk you through setting up the project environment, installing necessary dependencies, and running the project.
 
-# To run
--python3 manage.py migrate
--python3 manage.py runserver
+## Setting Up the Virtual Environment
+
+We recommend using `conda` to manage your virtual environments. If you haven't already, [install Anaconda or Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) on your system.
+
+1. **Create the Virtual Environment:**
+
+    Run the following command to create a new virtual environment named `myenv` with Python 3.3.0:
+
+    ```
+    conda create -n myenv python=3.3.0
+    ```
+
+2. **Activate the Virtual Environment:**
+
+    Once the environment is created, activate it using:
+
+    ```
+    conda activate myenv
+    ```
+
+## Installing Dependencies
+
+With your virtual environment activated, install the project dependencies using `pip`. 
+
+Run the following commands to install each required package:
+
+```
+pip install flask
+pip install Django
+pip install sentence_transformers
+pip install django-cors-headers
+```
+
+
+## Running the Project
+
+Before running the project for the first time, you'll need to apply migrations to your database. Then, you can start the development server.
+
+1. **Apply Migrations:**
+
+    ```
+    python manage.py migrate
+    ```
+
+2. **Start the Development Server:**
+
+    Run the following command to start the Django development server:
+
+    ```
+    python manage.py runserver
+    ```
+
+    The server will start on `http://127.0.0.1:8000/` by default. Open your web browser and navigate to this URL to view the application.
+
+## Troubleshooting
+
+- If you encounter any issues with package versions, consider adjusting the version numbers in the installation commands based on your specific requirements or compatibility concerns.
+- Ensure that the `conda` environment is activated whenever you're working on the project to keep dependencies isolated and manageable.
+
+---
+
+Thank you for setting up the project! If you have any questions or encounter any issues, please feel free to reach out for support.
 
