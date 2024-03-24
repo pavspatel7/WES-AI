@@ -8,10 +8,10 @@ We recommend using `conda` to manage your virtual environments. If you haven't a
 
 1. **Create the Virtual Environment:**
 
-    Run the following command to create a new virtual environment named `myenv` with Python 3.3.0:
+    Run the following command to create a new virtual environment named `myenv` with Python 3.12.0:
 
     ```
-    conda create -n myenv python=3.3.0
+    conda create -n myenv python=3.12.0
     ```
 
 2. **Activate the Virtual Environment:**
