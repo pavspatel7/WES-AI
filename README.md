@@ -58,6 +58,10 @@ Before running the project for the first time, you'll need to apply migrations t
 
     The server will start on `http://127.0.0.1:8000/` by default. Open your web browser and navigate to this URL to view the application.
 
+    Domain names registered for this website during the hackathon:
+    https://wesai.study/
+    https://rugpt.study/
+
 ## Troubleshooting
 
 - If you encounter any issues with package versions, consider adjusting the version numbers in the installation commands based on your specific requirements or compatibility concerns.
