@@ -65,3 +65,6 @@ Before running the project for the first time, you'll need to apply migrations t
 
 Thank you for setting up the project! If you have any questions or encounter any issues, please feel free to reach out for support.
 
+![Alt text](Images/p1.png "What is Chat Bot name?")
+![Alt text](Images/p2.png "Asking Location")
+![Alt text](Images/p3.png "General Information")
